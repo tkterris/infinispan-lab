@@ -1,0 +1,6 @@
+package jdg;
+
+message CacheKey {
+	required string index = 1;
+	required string keyField = 2;
+}

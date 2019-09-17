@@ -29,6 +29,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.infinispan</groupId>
+			<artifactId>infinispan-remote-query-client</artifactId>
+			<version>${infinispan.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>

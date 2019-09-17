@@ -1,0 +1,6 @@
+package jdg;
+
+message CacheValue {
+	required string name = 1;
+	required string email = 2;
+}
