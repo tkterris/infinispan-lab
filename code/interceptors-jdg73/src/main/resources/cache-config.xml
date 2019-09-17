@@ -1,0 +1,15 @@
+<infinispan>
+	<cache-container default-cache="local">
+		<transport cluster="mycluster" />
+		<local-cache name="local">
+
+			<custom-interceptors>
+				<interceptor position="FIRST" class="com.rhc.jdg.interceptor.CastingCacheInterceptor" />
+			</custom-interceptors>
+		</local-cache>
+		<invalidation-cache name="invalidation" mode="SYNC" />
+		<replicated-cache name="repl-sync" mode="SYNC" />
+		<distributed-cache name="dist-sync" mode="SYNC" />
+	</cache-container>
+</infinispan>
+
